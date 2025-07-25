@@ -1,0 +1,130 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    background-image: url('photos/pic_0.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Container for Centering Tables */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+
+/* Table Styling */
+table {
+    width: 60%;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    color: #ffffff;
+}
+
+th, td {
+    padding: 14px 16px;
+    border: 1px solid #ffffff;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+th {
+    background-color: #003366;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Page Title Styling */
+h1, h2 {
+    text-align: center;
+    color: #000000;
+    margin-top: 30px;
+}
+
+/* Navbar Styling */
+nav {
+    background-color: #003366;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+nav li {
+    position: relative;
+}
+
+nav a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+nav li:hover > a {
+    background-color: #0055aa;
+}
+
+nav li ul {
+    display: none;
+    position: absolute;
+    background-color: #003366;
+    min-width: 180px;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+nav li:hover > ul {
+    display: block;
+}
+
+nav li ul li {
+    position: relative;
+}
+
+nav li ul li ul {
+    left: 100%;
+    top: 0;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    table {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li ul, nav li ul li ul {
+        position: static;
+        display: none;
+    }
+
+    nav li:hover > ul {
+        display: block;
+    }
+}
