@@ -13,18 +13,6 @@ A web-based application to track matches, teams, and player statistics for the I
 - Responsive web design using PHP, HTML, CSS
 - MySQL-based backend with sample data
 
-## Folder Structure
-
-- index.php
-- style.css
-- db.php (not included for security)
-- navbar/
-- squads/
-- stats/
-- photos/
-- datasets/
-- screenshots/
-
 ## Datasets
 
 SQL and Excel files are available in the `datasets/` folder:
